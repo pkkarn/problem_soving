@@ -11,8 +11,8 @@ int picking_numbers(vector<int> vec) {
     int max_count = 0;
     // Sorting is important, because by doing so, you will not have keep tract of item, as you can guess in this subarray there should be only two element with absoulte difference of less than or equal to 1.
     sort(vec.begin(), vec.end());
-    int i = 0;
-    for(i; i < n; i++) {
+    // int i = 0;
+    for(int i = 0; i < n; i++) {
         // At each iteration take i
         for(int j = i; j < n; j++) {
             // And find the absolute difference with the next item.
